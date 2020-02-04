@@ -327,16 +327,9 @@ footer {
 }
 
 .indxbox:hover {
+  background-color: #3b3a39;
   color: white;
   text-decoration: none;
-}
-
-.indxbox-dark {
-  background-color: #292827;
-}
-
-.indxbox-dark:hover {
-  background-color: #3b3a39;
 }
 
 .imgsect {

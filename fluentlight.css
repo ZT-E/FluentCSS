@@ -350,7 +350,7 @@ footer {
 
 .indxbox {
   font-family: "Segoe UI";
-  background-color: #292827;
+  background-color: #f0eff6;
   width: 400px;
   height: 400px;
   display: inline-block;
@@ -372,17 +372,13 @@ footer {
 }
 
 .indxbox:hover {
-  color: white;
+  color: black;
+  background-color: #ffffff;
   text-decoration: none;
 }
 
-.indxbox-dark {
-  background-color: #292827;
-}
 
-.indxbox-dark:hover {
-  background-color: #3b3a39;
-}
+
 
 .imgsect {
   width: 100vw;
