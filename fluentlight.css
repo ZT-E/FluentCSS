@@ -37,10 +37,11 @@ body {
   line-height: 1.5;
   color: black;
   text-align: left;
-  background-color: #f0eff6;
+  background-color: #fffffe;
   display: grid;
   grid-gap: 10px;
 }
+
 
 .navbar {
   position: relative;
@@ -53,6 +54,9 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  text-decoration: none !important;
+  margin-left: 20px;
+  margin-top: -10px;
 }
 
 .navbar > .container,
@@ -75,38 +79,47 @@ body {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-}
-
-.navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
 }
-
-
 .nav-button{
   display: inline-block;
 padding-top: 0.5rem;
 padding-bottom: 0.5rem;
-color:black;
-transition: 0.2s;
-color: rgb(116, 116, 116)
+
 }
-.nav-button:hover{
-color:#000;
+.navbar-brand:hover, .navbar-brand:focus {
+  text-decoration: none;
 }
-.navbar a{
+
+.nav-button {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: black;
+  transition: 0.2s;
+  color: rgb(116, 116, 116)
+}
+
+.nav-button:hover {
+  color: #000;
+}
+
+.navbar a {
   padding-right: 0;
-padding-left: 0;
-cursor: pointer;
+  padding-left: 0;
+  cursor: pointer;
 }
-.navbar-nav{
-display: -ms-flexbox;
-display: flex;
--ms-flex-direction: column;
-flex-direction: column;
-padding-left: 0;
-margin-bottom: 0;
-list-style: none;
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
+
 footer {
   margin-bottom: .5rem;
   font-weight: 500;
@@ -181,12 +194,12 @@ footer {
   margin: 5px;
 }
 
-
 .btn:hover {
   filter: brightness(90%);
   color: white;
 }
-.btn:focus{
+
+.btn:focus {
   outline: none;
 }
 
@@ -214,6 +227,12 @@ footer {
   border-radius: 0px;
 }
 
+.btn-orange {
+  background-color: orange !important;
+  color: white;
+  border-radius: 0px;
+}
+
 .btn-primary:focus {
   outline-width: 3px;
   outline-color: rgba(18, 124, 172, 0.42);
@@ -232,6 +251,11 @@ footer {
   outline-style: solid;
 }
 
+.btn-orange:focus {
+  outline-width: 3px;
+  outline-color: rgba(223, 115, 23, 0.42);
+  outline-style: solid;
+}
 
 @font-face {
   font-family: 'Bebas';
@@ -258,7 +282,7 @@ footer {
 }
 
 .sect2 {
-  background-color: #fffffe;
+  background-color: #000000;
   width: 100vw;
   padding: 40px;
   color: #5f6c7b;
@@ -350,7 +374,7 @@ footer {
 
 .indxbox {
   font-family: "Segoe UI";
-  background-color: #f0eff6;
+  background-color: #efeeee;
   width: 400px;
   height: 400px;
   display: inline-block;
@@ -364,6 +388,7 @@ footer {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  transition: 0.3s;
 }
 
 .indxbox {
@@ -375,10 +400,8 @@ footer {
   color: black;
   background-color: #ffffff;
   text-decoration: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
-
-
-
 
 .imgsect {
   width: 100vw;
@@ -1065,4 +1088,20 @@ td {
 
 pre {
   border-radius: 10px;
+}
+
+.fix-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fix-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1031;
 }

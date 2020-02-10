@@ -288,6 +288,16 @@ footer {
   top: 0;
 }
 
+.sect6 {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  width: 100vw;
+  padding: 40px;
+}
+
+.sect6 h1 {
+  color: rgb(255, 255, 255);
+}
 .sect1 {
   background-color: #46b3e6;
   width: 100vw;
@@ -1248,4 +1258,20 @@ pre[class*="language-"] {
 
 .token.entity {
 	cursor: help;
+}
+
+.fix-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fix-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1031;
 }
